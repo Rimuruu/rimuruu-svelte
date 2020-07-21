@@ -1,0 +1,57 @@
+
+
+{
+"Memorie":{
+    "title": "Memorie",
+    "info":"2017 || Python",
+    "description":"Projet de baccalauréat",
+    "link":"https://github.com/Rimuruu/Memorie",
+    "background":""
+},
+"Snake":{
+    "title": "Snake",
+    "info":"2018 || C",
+    "description":"Projet de DUT Informatique",
+    "link":"https://github.com/Rimuruu/Snake",
+    "background":""
+},
+"IceWalker":{
+    "title": "IceWalker",
+    "info":"2018 || Java Processing",
+    "description":"Projet personel ",
+    "link":"https://github.com/Rimuruu/Icewalker",
+    "background":""
+}
+,
+"Pokemon":{
+    "title": "Pokemon Website",
+    "info":"2019 || Javascript PHP",
+    "description":"Projet de DUT Informatique 1ère année",
+    "link":"https://github.com/Rimuruu/Pokemon",
+    "background":""
+}
+,
+"Go":{
+    "title": "Jeu de Go",
+    "info":"2019 || Java",
+    "description":"Projet de DUT Informatique",
+    "link":"https://github.com/Rimuruu/Jeu-de-Go",
+    "background":""
+},
+"Pitayaplay":{
+    "title": "Pitayaplay",
+    "info":"2020 || Javascript",
+    "description":"Projet de DUT Informatique 2e année",
+    "link":"https://github.com/Rimuruu/team2_pitayaplay_web",
+    "background":""
+},
+"Spreadsheet":{
+    "title": "Svelte Spreadsheet-lite",
+    "info":"2020 || Javascript",
+    "description":"Projet Personnel",
+    "link":"https://github.com/Rimuruu/svelte-spreadsheet-lite",
+    "background":""
+}
+
+
+}

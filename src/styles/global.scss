@@ -1,0 +1,21 @@
+@charset "utf-8";
+@import "src/styles/bootstrap.scss";
+@import "src/styles/fonts.scss";
+
+
+*{
+    font-family: "Lato";
+    padding: 0;
+    margin:0;
+}
+.text-italic{
+    font-family: "Lato-italic";
+}
+.bg-very-dark{
+    background-color: rgb(27, 27, 27);
+}
+
+.text-underline{
+    text-decoration: underline;
+}
+$enable-gradients:                            true !important;
