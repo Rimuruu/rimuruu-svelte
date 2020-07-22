@@ -3,7 +3,7 @@
   import Main from "src/components/Main.svelte";
   import { fly } from "svelte/transition";
   import { tweened } from 'svelte/motion';
-   import Loadable from "svelte-loadable";
+  import Loadable from "svelte-loadable";
 
 </script>
 
@@ -35,7 +35,7 @@
 <Main></Main>
 </div>
 </div>
- 
+
   
   <Loadable loader={() => import('src/components/AnimatedBG.svelte')}>
     <div slot="loading">
