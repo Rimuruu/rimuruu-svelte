@@ -10,9 +10,11 @@ let isOpen = false;
 let category="history";
 let h,r;
 function change(){
+    category="history";
     if(isOpen){
         main.style.width = "0px";
         isOpen =false;
+        
         }
     else{ 
         console.log((container-450) + "px")
