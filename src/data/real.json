@@ -54,5 +54,12 @@
         "description": "Projet Personnel",
         "link": "https://github.com/Rimuruu/svelte-spreadsheet-lite",
         "background": ""
+    },
+    "Minesweeper": {
+        "title": "Minesweeper",
+        "info": "2020 || C++ SDL",
+        "description": "Projet Personnel",
+        "link": "./file/Minesweeper.rar",
+        "background": ""
     }
 }
