@@ -9,7 +9,7 @@ import json from '@rollup/plugin-json';
 import postcss from 'rollup-plugin-postcss';
 import autoPreprocess from 'svelte-preprocess';
 import visualizer from 'rollup-plugin-visualizer';
-import cleaner from 'rollup-plugin-cleaner';
+
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -18,19 +18,20 @@ export default {
 	input: 'src/main.js',
 	output: {
 		sourcemap: true,
-		format: 'es',
+		format: 'iife',
 		name: 'app',
-		dir:"public/build/"
-		
+		file: 'public/build/bundle.js'
 	},
 	plugins: [
 		svelte({
+			emitCss:true,
+			compilerOptions: {
 			// enable run-time checks when not in production
 			dev: !production,
 			// we'll extract any component CSS out into
 			// a separate file - better for performance
-			css: css => {
-				css.write('public/build/bundle.css');
+			
+			
 			},
 			preprocess: autoPreprocess({   
 				
@@ -51,7 +52,7 @@ export default {
 		// https://github.com/rollup/plugins/tree/master/packages/commonjs
 		resolve({
 			browser: true,
-			dedupe: ['svelte']
+	
 		}),
 		commonjs(),
 
@@ -67,19 +68,19 @@ export default {
 		// instead of npm run dev), minify
 		production && terser(),
 		alias({
-			resolve: [ '.js', '.json', '.scss', '.svelte' ],
+			resolve: [ '.js', '.json', '.scss', '.svelte','.css' ],
 			entries:[
 			  { find: /^src/, replacement: __dirname + '/src' } 
 			],
 		  }),
 		  json(),
-		  postcss(),
-		  visualizer({open:false}),
-		  cleaner({
-			  targets: [
-				'./public/build'
-			  ]
-			})
+		  postcss({
+			extract: true,
+			// Or with custom file name, it will generate file relative to bundle.js in v3
+			extract: 'bundle.css'
+		  }),
+		  
+		  
 	],
 	watch: {
 		clearScreen: false

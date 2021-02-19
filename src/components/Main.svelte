@@ -3,7 +3,7 @@
 import {fade} from "svelte/transition"
 import History from "src/pages/History.svelte"
 import Realisation from "src/pages/Realisation.svelte"
-
+import { onMount } from "svelte";
 let main;
 let container;
 let isOpen = false;
@@ -40,14 +40,15 @@ function changeR(){
     
 }
 
-
-$:{
-    if(isOpen)main.style.width = (container-450) + "px";  
-}
+onMount(() => {
+    change();
+    
+    });
 
 </script>
 
 <style>
+
 .w-90{
      
     -webkit-box-shadow: -12px 1px 6px -4px rgba(0,0,0,0.75);

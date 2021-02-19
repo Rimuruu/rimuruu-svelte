@@ -3,7 +3,7 @@
   import Main from "src/components/Main.svelte";
   import { fly } from "svelte/transition";
   import { tweened } from 'svelte/motion';
-  import Loadable from "svelte-loadable";
+  import AnimatedBG from 'src/components/AnimatedBG.svelte';
 
 </script>
 
@@ -14,19 +14,7 @@
          display:none !important
       }
    }
-.bg-not-load{
-     position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -2;
-}
-.spin{
-  display: flex;
-   align-items: center; 
-   justify-content: center;
-}
+
 </style>
 
 <div class="container-fluid d-flex p-0 h-100 w-100 mw-100 min-vh-100">
@@ -36,11 +24,5 @@
 </div>
 </div>
 
+  <AnimatedBG></AnimatedBG>
   
-  <Loadable loader={() => import('src/components/AnimatedBG.svelte')}>
-    <div slot="loading">
-      <div class="bg-dark bg-not-load text-center align-middle spin"><div class="spinner-border text-light " role="status">
-  <span class="sr-only">Loading...</span>
-</div></div>
-    </div>
-  </Loadable>

@@ -1,5 +1,8 @@
+<script>
+import "styles/global.scss";
+</script>
 <style lang="scss">
-@import "styles/global.scss";
+
 
 </style>
 
@@ -9,6 +12,8 @@
     <p class="ml-5 text-italic text-muted">Transposition de Flash à Javascript d'une application de gestion d'entreprise à but éducatif.</p>
 
 <h2 >Formation</h2>
+<h5 class="ml-5 text-light">Licence Informatique</h5>
+    <p class="ml-5 text-italic text-muted">Université de Paris-Saclay </p>
 <h5 class="ml-5 text-light">2ème année DUT informatique en programme d'échange</h5>
     <p class="ml-5 text-italic text-muted">Université du Québec à Chicoutimi </p>
 <h5 class="ml-5 text-light">1ère année DUT Informatique</h5>

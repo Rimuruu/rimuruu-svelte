@@ -6,12 +6,12 @@ box-shadow: inset 51px -5px 85px -35px rgba(0,0,0,0.75)
 }
 
 .animatedBG{
-    background-image: url("/video/bg.jpg");
+    background-image: url("/img/bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-.video{
+.img{
  
     position: fixed;
   right: 0;
@@ -27,4 +27,4 @@ box-shadow: inset 51px -5px 85px -35px rgba(0,0,0,0.75)
 
 
 
-<div class="video p-0 shadow-p animatedBG"></div>
+<div class="img p-0 shadow-p animatedBG"></div>

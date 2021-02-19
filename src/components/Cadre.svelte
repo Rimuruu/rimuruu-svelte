@@ -1,10 +1,9 @@
 <script>
-import Loadable from "svelte-loadable";
+import Tetris from "src/game/Tetris.svelte"
 export let title;
 export let info;
 export let description;
 export let link;
-export let background;
 let isOpen=false;
 
 
@@ -68,13 +67,7 @@ let isOpen=false;
 
 <div class="modal-content-c">
 <button on:click={()=>{isOpen = !isOpen}} class="bg-danger float-right"> X </button>
- <Loadable loader={() => import('src/game/Tetris.svelte')}>
-    <div slot="loading">
-      <div class="bg-dark bg-not-load text-center align-middle spin"><div class="spinner-border text-light " role="status">
-  <span class="sr-only">Loading...</span>
-</div></div>
-    </div>
-  </Loadable>
+<Tetris></Tetris>
 </div>
 </div>
 

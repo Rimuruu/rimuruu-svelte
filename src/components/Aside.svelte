@@ -1,6 +1,7 @@
 <script>
+
 let window;
-$:window?console.log(window):false;
+
 
 </script>
 
